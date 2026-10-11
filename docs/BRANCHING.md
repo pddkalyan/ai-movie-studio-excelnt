@@ -9,7 +9,7 @@ Established 2026-10-11 by GPT-6, for the independent repository pddkalyan/ai-mov
 | main | Stable release snapshots (GitHub default branch) | Explicitly approved release PRs from develop only |
 | develop | Tested integration of independently reviewed worker changes | Approved, passing feature PRs; no direct unreviewed changes |
 
-main remains unchanged at initial commit f245ac9de8cffeb5e269493808ec61ff30de173c. 
+main remains unchanged at initial commit f245ac9de8cffeb5e269493808ec61ff30de173c.
 develop was created from Phase 0 draft PR #1 exact tested head b20b3c068377fc04eda8140c634748ba1e0c2ebf.
 PR #1 is a preserved initial review packet targeting main, not an automatic release. Once develop advances, create a NEW accurate develop -> main release PR for the desired release SHA; never treat the old frozen PR #1 as containing newer changes.
 
