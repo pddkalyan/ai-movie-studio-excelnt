@@ -1,0 +1,8 @@
+{"file":"studio/story/__init__.py","creator":"chatgpt","model":"gpt-6","task":"EX-A-0002","kind":"generated"}
+{"file":"studio/story/bible.py","creator":"chatgpt","model":"gpt-6","task":"EX-A-0002","kind":"generated"}
+{"file":"studio/story/continuity.py","creator":"chatgpt","model":"gpt-6","task":"EX-A-0002","kind":"generated"}
+{"file":"studio/story/journal.py","creator":"chatgpt","model":"gpt-6","task":"EX-A-0002","kind":"generated"}
+{"file":"tests/story/test_story_worker_a.py","creator":"chatgpt","model":"gpt-6","task":"EX-A-0002","kind":"generated"}
+{"file":"docs/story/EX_A_0002.md","creator":"chatgpt","model":"gpt-6","task":"EX-A-0002","kind":"generated"}
+{"file":"docs/story/PROVENANCE.jsonl","creator":"chatgpt","model":"gpt-6","task":"EX-A-0002","kind":"generated"}
+{"file":"tests/story/__init__.py","creator":"chatgpt","model":"gpt-6","task":"EX-A-0002","kind":"generated","purpose":"Make 50 nested Worker A tests discoverable by existing GitHub CI"}
