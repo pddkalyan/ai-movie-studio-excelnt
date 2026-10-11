@@ -1,0 +1,52 @@
+name: Excelnt Edition Phase 0 Offline CI
+
+on:
+  push:
+    branches:
+      - candidate/phase0-independent-foundation-gpt6-20261011
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: excelnt-foundation-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  offline_contracts:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Compile offline sources and tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m compileall -q studio scripts tests
+      - name: Offline functional and negative tests (no model provider traffic)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v
+      - name: Demonstration must remain an unrendered planning fixture
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m scripts.offline_demo > phase0_plan.json
+          python -c "import json; x=json.load(open('phase0_plan.json')); assert x['plan_only'] and x['rendered_clips']==0 and x['duration_seconds']==1200 and x['shots']==120 and x['total_frames']==28800 and not x['archive_uploaded']"
+      - name: Verify patch whitespace
+        shell: bash
+        run: git diff --check HEAD~1 HEAD

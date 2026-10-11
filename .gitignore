@@ -218,3 +218,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Independent Movie Studio Excelnt: disallow local secrets and personal media
+.env.*
+!.env.example
+*.pem
+*.p12
+*.key
+*.token
+*.credentials
+.auth/
+.secrets/
+.local_state/
+.local_artifacts/
+private/
+rendered_media/
+media_output/
+voice_samples/
+*.wav
+*.mp4
+*.mov
+*.webm
+*.flac
+phase0_plan.json
