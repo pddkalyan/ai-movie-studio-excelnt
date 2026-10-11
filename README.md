@@ -37,6 +37,25 @@ The tested Phase 0 code is now on the **develop** integration branch; the **main
 
 The owner-provided Excelnt API Keys dashboard documents gateway root **https://excelnt.ai/v1** with **Bearer** authentication and key issuance through the VS Code extension (currently **0/25 active keys** at the supplied observation). It does not document the exact model request endpoints or a secure quota API. No key has been created or connected. See docs/EXCELNT_API_EVIDENCE.md.
 
+## Excelnt A/B credential slots — offline prepared
+
+The **EX-0006** coordinator integration provides two independent environment
+slots (`EXCELNT_WORKER_A_API_KEY`, `EXCELNT_WORKER_B_API_KEY`), a strict
+Excelnt HTTPS gateway base validation, sanitized readiness output and refusal
+to reuse the same key in both slots. **No key is presently issued or attached
+to this repository.** We have not verified a request route, model identity,
+account-specific quota endpoint or provider-enforced way to stop spending
+the separately available $600 balance.
+
+Run the readiness check with zero credentials or model traffic:
+
+    python -m scripts.excelnt_readiness
+
+The result stays `OFFLINE_ONLY` even if both slots contain synthetic keys.
+The adapter cannot send an AI request; it intentionally rejects attempts
+until official API details, spend controls and independent authorization
+are verified. See docs/EXCELNT_AB_INTEGRATION.md.
+
 ## Public repository and evidence
 
 Never commit Excelnt keys, email addresses, secrets, prompts with private data, movie voice/image sources, account statements, browser cookies, rendered output or unapproved logs. No automatic subscription/paid provider call, no pipe-to-shell downloads. Offline CI needs only read permission. Final movie success requires actual checksum-verified media, sound, lip sync, 20-minute runtime and archive — green planning tests do not demonstrate that.
