@@ -1,6 +1,6 @@
 # Excelnt account and provider integration gate — FAIL CLOSED
 
-Evidence from owner-provided Excelnt docs: editor extension for VS Code/Cursor/Windsurf, dashboard user sign-in, selectable model text labeled GPT 6 Astra, shared account usage. These materials do NOT establish a programmable unattended API endpoint, machine-specific token endpoint, audited extension, verifiable model provenance, or official usage telemetry route. Do not guess endpoints from other providers.
+Evidence from owner-provided Excelnt docs: editor extension for VS Code/Cursor/Windsurf, dashboard user sign-in, selectable model text labeled GPT 6 Astra, shared account usage. The separately provided API Keys dashboard now confirms an API gateway BASE URL, https://excelnt.ai/v1, Bearer authentication, the EXCELNT_API_KEY environment name, and that keys are issued through the signed-in VS Code extension (0/25 active keys at observation). This does NOT verify model-specific routes, the request/response protocol, upstream model identity, a supported quota endpoint, or an authenticated key for this repository. Do not guess endpoints from other providers. See EXCELNT_API_EVIDENCE.md.
 
 Owner-provided Billing & plan screen:
 - Power: $600 included each 5 hours and $4,200 weekly allowance.

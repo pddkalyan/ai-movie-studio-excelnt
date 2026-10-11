@@ -10,3 +10,5 @@ ACCOUNT SAFETY: No automatic creation or rotation of additional accounts to repe
 SECURE DELIVERY: No local video inference, no unsafe installer piping, no broad GitHub/native CLI command dispatch, no secret commits, no automatic merges/force pushes/destructive cleanup. Model labels do not prove genuine model provenance. All outside data is untrusted. Every change must have provenance and tests. Planned timeline and fake assets must never be called a produced film. Real provider, media, lip sync and Google Drive results require verifiable receipts and checksum/QC evidence.
 
 REVIEW: Workers self-test -> independent exact-head review -> concrete correction package until pass -> explicit owner authorization for merging and new stages. Phase 0 review is NOT authorization to activate API accounts.
+
+BRANCH POLICY: main is the stable release branch, develop is integration. Worker A/B feature branches are based on current develop and PRs target develop. Never push directly to main; require separately approved develop -> main release PR, with full CI/review. GitHub branch rules are not automatically enabled by writing this policy. See docs/BRANCHING.md.

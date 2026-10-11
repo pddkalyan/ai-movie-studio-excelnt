@@ -31,6 +31,12 @@ The owner-supplied Power plan shows **$600 included per five-hour window**, **$4
 
 See docs/EXCELNT_GATE.md, docs/ACCEPTANCE.md, docs/WORKERS.md and AGENTS.md.
 
+## Git branching and provider gateway
+
+The tested Phase 0 code is now on the **develop** integration branch; the **main** default/release branch is deliberately unchanged. All new Worker A/Worker B branches must originate at develop, submit feature PRs **targeting develop**, then receive tests and approval. Actual releases require a separate, reviewed **develop -> main** PR. See docs/BRANCHING.md.
+
+The owner-provided Excelnt API Keys dashboard documents gateway root **https://excelnt.ai/v1** with **Bearer** authentication and key issuance through the VS Code extension (currently **0/25 active keys** at the supplied observation). It does not document the exact model request endpoints or a secure quota API. No key has been created or connected. See docs/EXCELNT_API_EVIDENCE.md.
+
 ## Public repository and evidence
 
 Never commit Excelnt keys, email addresses, secrets, prompts with private data, movie voice/image sources, account statements, browser cookies, rendered output or unapproved logs. No automatic subscription/paid provider call, no pipe-to-shell downloads. Offline CI needs only read permission. Final movie success requires actual checksum-verified media, sound, lip sync, 20-minute runtime and archive — green planning tests do not demonstrate that.

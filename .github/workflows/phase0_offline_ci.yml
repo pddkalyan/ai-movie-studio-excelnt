@@ -2,10 +2,9 @@ name: Excelnt Edition Phase 0 Offline CI
 
 on:
   push:
-    branches:
-      - candidate/phase0-independent-foundation-gpt6-20261011
+    branches: [main, develop]
   pull_request:
-    branches: [main]
+    branches: [main, develop]
 
 permissions:
   contents: read
