@@ -16,3 +16,12 @@
 {"file":"README.md","actor":"chatgpt","model":"gpt-6","task":"EX-0001","run":"20261011_PHASE0_FOUNDATION","kind":"modified"}
 {"file":".gitignore","actor":"chatgpt","model":"gpt-6","task":"EX-0001","run":"20261011_PHASE0_FOUNDATION","kind":"modified"}
 {"file":"PROVENANCE_REGISTRY.jsonl","created_by":"chatgpt","model":"gpt-6","task":"EX-0001","run":"20261011_PHASE0_FOUNDATION","kind":"canonical"}
+{"file":"docs/BRANCHING.md","created_by":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"generated","run":"20261011_DEVELOP_WORKFLOW"}
+{"file":"docs/EXCELNT_API_EVIDENCE.md","created_by":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"generated","run":"20261011_GATEWAY_EVIDENCE"}
+{"file":"tests/test_development_workflow.py","created_by":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"generated","run":"20261011_DEVELOP_CI_POLICY"}
+{"file":".github/workflows/phase0_offline_ci.yml","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Run offline CI for develop and main PRs"}
+{"file":"docs/EXCELNT_GATE.md","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Document confirmed API gateway root, not inferred protocol"}
+{"file":"docs/WORKERS.md","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Develop-based distinct worker tasks"}
+{"file":"README.md","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Document actual branch strategy and API key restrictions"}
+{"file":"AGENTS.md","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Main-only release gates"}
+{"file":"PROVENANCE_REGISTRY.jsonl","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Provenance for branching and gateway evidence"}
