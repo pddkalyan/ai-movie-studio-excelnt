@@ -25,3 +25,10 @@
 {"file":"README.md","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Document actual branch strategy and API key restrictions"}
 {"file":"AGENTS.md","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Main-only release gates"}
 {"file":"PROVENANCE_REGISTRY.jsonl","actor":"chatgpt","model":"gpt-6","task":"EX-0005","kind":"modified","reason":"Provenance for branching and gateway evidence"}
+{"file":"studio/excelnt_accounts.py","created_by":"chatgpt","model":"gpt-6","task":"EX-0006","run":"20261011_AB_GATEWAY_PREP","kind":"generated"}
+{"file":"scripts/excelnt_readiness.py","created_by":"chatgpt","model":"gpt-6","task":"EX-0006","run":"20261011_AB_GATEWAY_PREP","kind":"generated"}
+{"file":"tests/test_excelnt_accounts.py","created_by":"chatgpt","model":"gpt-6","task":"EX-0006","run":"20261011_AB_GATEWAY_PREP","kind":"generated"}
+{"file":"docs/EXCELNT_AB_INTEGRATION.md","created_by":"chatgpt","model":"gpt-6","task":"EX-0006","run":"20261011_AB_GATEWAY_PREP","kind":"generated"}
+{"file":"README.md","actor":"chatgpt","model":"gpt-6","task":"EX-0006","run":"20261011_AB_GATEWAY_PREP","kind":"modified"}
+{"file":"docs/EXCELNT_GATE.md","actor":"chatgpt","model":"gpt-6","task":"EX-0006","run":"20261011_AB_GATEWAY_PREP","kind":"modified"}
+{"file":"PROVENANCE_REGISTRY.jsonl","actor":"chatgpt","model":"gpt-6","task":"EX-0006","run":"20261011_AB_GATEWAY_PREP","kind":"modified"}
